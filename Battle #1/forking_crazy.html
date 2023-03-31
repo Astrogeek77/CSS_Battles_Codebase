@@ -1,0 +1,71 @@
+<div class="stand"></div>
+<div class="middle"></div>
+<div class="spikes">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<style>
+  body {
+    background: #6592cf;
+  }
+
+  .stand {
+    position: absolute;
+    width: 20px;
+    height: 55px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #060f55;
+  }
+
+  .middle {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    background: #060f55;
+    width: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  .spikes {
+    width: 140px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .spikes span {
+    width: calc(100% / 7);
+    height: 130px;
+  }
+
+  .spikes span:nth-child(odd) {
+    background: #060f55;
+    border-radius: 20px 20px 0 0;
+  }
+  .spikes span:nth-child(even) {
+    height: 110px;
+    background: #6592cf;
+    border-radius: 0 0 20px 20px;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->

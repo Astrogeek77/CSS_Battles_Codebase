@@ -1,0 +1,73 @@
+<div class="center circle a"></div>
+<div class="center circle b"></div>
+<div class="center circle c"></div>
+<style>
+  body {
+    background: #191210;
+  }
+
+  .center {
+    position: absolute;
+    aspect-ratio: 1;
+    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+  .a {
+    background: #84271c;
+    width: 50px;
+    z-index: 4;
+  }
+
+  .b {
+    background: #191210;
+    width: 100px;
+    z-index: 3;
+  }
+
+  .c {
+    background: #eca03d;
+    width: 140px;
+    z-index: 2;
+  }
+  .c:before,
+  .c:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 20px solid #eca03d;
+  }
+
+  .c:before {
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border-top: 0;
+    top: 50%;
+    left: 20px;
+    transform: translate(-100%, 0);
+  }
+  .c:after {
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom: 0;
+    bottom: 50%;
+    right: 20px;
+    transform: translate(100%, 0);
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->

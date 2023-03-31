@@ -1,0 +1,57 @@
+<div class="center sqr a"></div>
+<div class="center sqr b"></div>
+<div class="center circle"></div>
+<div class="center rec"></div>
+<style>
+  body {
+    background: #222730;
+  }
+
+  .center {
+    position: absolute;
+    aspect-ratio: 1;
+    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .circle {
+    border-radius: 50%;
+    background: #393e46;
+    width: 50px;
+    z-index: 4;
+  }
+
+  .sqr {
+    transform-origin: top left;
+    rotate: 45deg;
+  }
+
+  .a {
+    background: #4caab3;
+    width: 150px;
+    z-index: 3;
+  }
+
+  .b {
+    background: #222730;
+    width: 250px;
+    z-index: 2;
+  }
+
+  .rec {
+    height: 150px;
+    width: 100%;
+    background: #4caab3;
+    z-index: -1;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
