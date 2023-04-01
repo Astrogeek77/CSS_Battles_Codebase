@@ -1,0 +1,52 @@
+<div class="a"></div>
+<div class="b"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="a"></div>
+<div class="b"></div>
+<style>
+  body {
+    background: #5c434c;
+    display: grid;
+    margin: 0;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  /*   body {
+    background: #5C434C;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+  } */
+
+  div {
+    height: 79.5px;
+    width: 80px;
+    border-radius: 100px 0 0;
+  }
+
+  div:is(.a) {
+    background: #f09462;
+  }
+  div:is(.b) {
+    background: #f5d6b4;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
