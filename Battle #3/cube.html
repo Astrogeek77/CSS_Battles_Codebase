@@ -1,0 +1,42 @@
+<div></div>
+<style>
+  body {
+    background: #0b2429;
+  }
+
+  div {
+    position: absolute;
+    top: 61.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    background: #f3ac3c;
+    width: 100px;
+    rotate: 45deg;
+    transform-origin: top left;
+  }
+
+  div:before,
+  div:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+  }
+
+  div::before {
+    background: #998235;
+    top: 0px;
+    left: -75%;
+    transform: skew(-45deg);
+    rotate: 90deg;
+  }
+
+  div::after {
+    background: #1a4341;
+    bottom: 100px;
+    right: 25%;
+    transform: skew(45deg);
+    rotate: 180deg;
+  }
+</style>
