@@ -1,0 +1,28 @@
+<div class="block a"></div>
+<div class="block b"></div>
+<style>
+  body {
+    background: #F3AC3C;
+  }
+  .block {
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%, 0% 50%);
+    aspect-ratio: 1;
+    top: 50%;
+    transform-origin: left;
+  }
+  .a {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background: #1A4341;
+  }
+
+  .b {
+    left: 37.5%;
+    transform: translateX(-50%);
+    width: 100px;
+    background: #998235;
+    rotate: -90deg;
+  }
+</style>

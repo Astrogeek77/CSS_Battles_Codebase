@@ -1,0 +1,68 @@
+<div class="cup one"></div>
+<div class="cup two"></div>
+<div class="cup three"></div>
+<div class="cup four"></div>
+<div class="ball one"></div>
+<div class="ball two"></div>
+<div class="ball three"></div>
+<div class="ball four"></div>
+
+<style>
+  body {
+    background: #1a4341;
+  }
+  .ball {
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #998235;
+  }
+
+  .ball.two {
+    left: 280px;
+    background: #f3ac3c;
+  }
+
+  .ball.three {
+    top: 160px;
+    left: 140px;
+  }
+
+  .ball.four {
+    top: 160px;
+    left: 210px;
+    background: #f3ac3c;
+  }
+
+  .cup {
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    width: 50px;
+    aspect-ratio: 1;
+    background: #dd6b4d;
+    border-radius: 50px 50px 0 0;
+    background: #f3ac3c;
+  }
+
+  .cup.two {
+    left: 210px;
+    background: #998235;
+  }
+
+  .cup.three {
+    top: 160px;
+    left: 70px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .cup.four {
+    top: 160px;
+    left: 280px;
+    border-radius: 0 0 50px 50px;
+    background: #998235;
+  }
+</style>

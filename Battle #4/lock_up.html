@@ -1,0 +1,29 @@
+<div></div>
+<style>
+  body {
+    background: #E38F66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: relative;    
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #AA445F;
+  }
+  div:before {
+    content: "";
+    border: 30px solid #F7EC7D;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+</style>

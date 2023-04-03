@@ -1,0 +1,37 @@
+<div class="base"></div>
+<div class="base"></div>
+<div class="circle"></div>
+<div class="circle a"></div>
+<style>
+  body {
+    background: #62306d;
+  }
+  .base {
+    position: absolute;
+    top: 125px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 150px;
+    background: #aa445f;
+    border-radius: 50px;
+  }
+  .base:nth-of-type(2) {
+    top: 174.5px;
+    left: 270px;
+    background: #e38f66;
+  }
+  .circle {
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #f7ec7d;
+  }
+  .circle.a {
+    left: 270px;
+  }
+</style>
