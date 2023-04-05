@@ -1,0 +1,30 @@
+<div class="tri"></div>
+<div class="tri a"></div>
+<div class="tri b"></div>
+<style>
+  body {
+    background: #007065;
+  }
+  .tri {
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 251.5px;
+    height: 100px;
+    background: #ffeecf;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 3;
+  }
+  .tri.a {
+    top: 50%;
+    background: #f5c181;
+    z-index: 2;
+  }
+
+  .tri.b {
+    background: #00a79d;
+    top: 67%;
+    z-index: 1;
+  }
+</style>
