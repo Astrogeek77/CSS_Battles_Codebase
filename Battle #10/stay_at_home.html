@@ -1,0 +1,50 @@
+<div class="roof"></div>
+<div class="base"></div>
+<style>
+  body {
+    background: #6592cf;
+    position: relative;
+  }
+  .roof {
+    position: absolute;
+    top: 40px;
+    left: 93px;
+    width: 200px;
+    height: 100px;
+    background: #243d83;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .base {
+    position: absolute;
+    top: 140px;
+    left: 120px;
+    background: #243d83;
+    height: 102px;
+    width: 148.5px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+  }
+  .base:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 22px;
+    height: 10px;
+    width: 100px;
+    border-radius: 50px;
+    background: #eeb850;
+  }
+  .base::before {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 47px;
+    height: 50px;
+    width: 50px;
+    background: red;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+    background: #eeb850;
+  }
+</style>

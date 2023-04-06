@@ -1,0 +1,33 @@
+<div class="soap bottom"></div>
+<div class="soap top"></div>
+<style>
+  body {
+    background: #293462;
+  }
+  .soap {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  }
+  .bottom {
+    top: 110px;
+    background: #a64942;
+  }
+  .top {
+    top: 90px;
+    background: #fe5f55;
+  }
+  .top:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #a64942;
+    height: 40px;
+    width: 140px;
+    border-radius: 99px;
+  }
+</style>
