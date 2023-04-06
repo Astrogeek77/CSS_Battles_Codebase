@@ -1,0 +1,29 @@
+<div></div>
+<style>
+  body {
+    background: #6592cf;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  div {
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+  }
+  div:before,
+  div:after {
+    --offset: calc(50% - 15px);
+    content: '';
+    position: absolute;
+    border: 30px solid #243d83;
+    top: 30px;
+    right: var(--offset);
+    border-radius: 70px;
+    width: 300px;
+    height: 182.5px;
+  }
+  div:after {
+    left: var(--offset);
+  }
+</style>
