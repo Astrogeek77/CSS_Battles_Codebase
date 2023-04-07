@@ -1,0 +1,31 @@
+<div wrapper>
+  <div eyes></div>
+  <div mouth></div>
+</div>
+<style>
+  * {
+    background: #191919;
+    position: absolute;
+  }
+  [wrapper] {
+    height: 150;
+    width: 100;
+    transform: translate(92px, 67px);
+    overflow: hidden;
+    -webkit-box-reflect: right;
+  }
+  [eyes] {
+    background: #4f77ff;
+    width: 100;
+    height: 50;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 50% 100%);
+  }
+  [mouth] {
+    background: #191919;
+    width: 120;
+    height: 120;
+    z-index: -1;
+    transform: translate(-45px, -80px) rotate(45deg);
+    border: 35px solid #4f77ff;
+  }
+</style>

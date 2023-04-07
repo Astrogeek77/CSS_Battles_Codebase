@@ -1,0 +1,30 @@
+<div center></div>
+<div wrapper><div left_side></div></div>
+
+<style>
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  [center] {
+    background: #4f77ff;
+    width: 110;
+    height: 110;
+  }
+  [left_side] {
+    background: #4f77ff;
+    position: absolute;
+    width: 30;
+    height: 30;
+    border-radius: 50%;
+    transform: translate(-130px, -75px);
+    box-shadow: 8px 8px 0 7px #f9e492, 10px 10px 0 20px #191919;
+    -webkit-box-reflect: right 90px;
+    -webkit-box-reflect: below 90px;
+  }
+  [wrapper] {
+    -webkit-box-reflect: right -110px;
+  }
+</style>

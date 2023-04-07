@@ -1,0 +1,71 @@
+<div class="parent">
+  <div class="top"></div>
+  <div class="center">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<style>
+  body {
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .top {
+    background-color: #4f77ff;
+    width: 120px;
+    height: 100px;
+    border-radius: 60px 60px 10px 10px;
+    position: relative;
+    margin-top: -16px;
+  }
+  .top:before,
+  .top:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #191919;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .top:after {
+    top: 53%;
+    left: 54%;
+  }
+  .top:before {
+    top: 53%;
+    right: 54%;
+  }
+  .center {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    background: #4f77ff;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .center:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #191919;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    left: 30px;
+  }
+  .center span {
+    width: 10px;
+    height: 10px;
+    background: #191919;
+    border-radius: 5px 5px 0px 0px;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+</style>

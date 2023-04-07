@@ -1,0 +1,72 @@
+<div top_circle></div>
+<div top_petal></div>
+<div middle></div>
+<div bottom></div>
+<div hilt></div>
+<div stand></div>
+
+<style>
+  body {
+    background: #191919;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-40px);
+  }
+  [top_circle] {
+    background: #4f77ff;
+    width: 30;
+    height: 30;
+    border-radius: 50%;
+    border: 10px solid #191919;
+    transform: translateY(0px);
+    z-index: 4;
+  }
+  [top_petal] {
+    background: #4f77ff;
+    position: absolute;
+    width: 100;
+    height: 30;
+    transform: translateY(-30px);
+    border-radius: 20px 20px 40px 40px;
+    border: 10px solid #191919;
+    z-index: 3;
+  }
+  [middle] {
+    background: #4f77ff;
+    position: absolute;
+    width: 140;
+    height: 30;
+    transform: translateY(-10.5px);
+    border-radius: 20px 20px 50px 50px;
+    border: 10px solid #191919;
+    z-index: 2;
+  }
+  [bottom] {
+    background: #4f77ff;
+    width: 100;
+    height: 100;
+    border-radius: 50%;
+    transform: translateY(-20px);
+    z-index: 1;
+  }
+  [hilt] {
+    background: #f9e492;
+    position: absolute;
+    width: 40;
+    height: 40;
+    border-radius: 50%;
+    transform: translateY(55px);
+  }
+  [stand] {
+    background: #f9e492;
+    position: absolute;
+    width: 20;
+    height: 90;
+    border-radius: 50px 50px;
+    transform: translateY(100px);
+  }
+</style>
