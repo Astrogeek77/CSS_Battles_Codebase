@@ -1,0 +1,85 @@
+<div wrapper>
+  <div nose></div>
+  <div left-side>
+    <div left-eye><div left-inner></div></div>
+  </div>
+  <div right-side>
+    <div right-eye><div right-inner></div></div>
+  </div>
+</div>
+
+<style>
+  body {
+    background: #191919;
+  }
+  [wrapper] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  [left-side] {
+    background-color: #e08027;
+    height: 115px;
+    width: 115px;
+    border-radius: 0 50% 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(15px, -24px);
+  }
+  [left-eye] {
+    height: 90;
+    width: 90;
+    background: #191919;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [left-inner] {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    border-radius: 60px 60px 0px 0px;
+    border: 8px solid #e08027;
+    border-bottom: 0;
+    transform: translate(-2px, -2px);
+  }
+  [right-side] {
+    background-color: #e08027;
+    border: 10px solid #191919;
+    height: 115px;
+    width: 115px;
+    border-radius: 50% 0 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-5px, -24px);
+  }
+  [right-eye] {
+    height: 90;
+    width: 90;
+    background: #191919;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [right-inner] {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    border-radius: 60px 60px 0px 0px;
+    border: 8px solid #e08027;
+    border-bottom: 0;
+    transform: translate(0px, -2px);
+  }
+  [nose] {
+    background: #e08027;
+    height: 70;
+    width: 70;
+    position: absolute;
+    transform: translate(0px, 15px) rotate(45deg);
+  }
+</style>
