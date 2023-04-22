@@ -1,0 +1,37 @@
+<div sqr></div>
+<div shape></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  div {
+    position: absolute;
+    height: 50;
+    width: 50;
+    border: 10px solid #5dbcf9;
+  }
+  [sqr] {
+    transform: translate(1px, -1px);
+  }
+  [shape] {
+    border-radius: 50% 50% 0% 50%;
+    transform: translate(-59px, -61px);
+    -webkit-box-reflect: right 50px;
+  }
+  [shape]:after {
+    content: '';
+    position: absolute;
+    height: 50;
+    width: 50;
+    border: inherit;
+    border-radius: 50% 0% 50% 50%;
+    transform: translate(-10px, 110px);
+  }
+</style>
