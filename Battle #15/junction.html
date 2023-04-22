@@ -1,0 +1,28 @@
+<div a></div>
+<div b></div>
+<style>
+  body {
+    background: #191919;
+  }
+  div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 130px;
+    background: #fe5f55;
+    border-radius: 0 0 20px 20px;
+    -webkit-box-reflect: below 40px;
+  }
+  [b] {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    -webkit-box-reflect: right 40px;
+    background: #a64942;
+  }
+</style>
