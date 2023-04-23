@@ -1,0 +1,52 @@
+<div class="main"></div>
+<div class="box"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background: #62306d;
+  }
+  .main {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    bottom: 0;
+    background: #f7ec7d;
+  }
+
+  .main:before {
+    content: '';
+    background: #f7ec7d;
+    width: 77px;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: -1;
+    border-top-left-radius: 100.5px;
+    border-top-right-radius: 100.5px;
+  }
+  .main:after {
+    content: '';
+    background: #f7ec7d;
+    width: 77px;
+    height: 40px;
+    position: absolute;
+    bottom: -3px;
+    left: 161.5px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    rotate: 90deg;
+    transform-origin: top center;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 75px;
+    top: 75px;
+    background: #62306d;
+    border-bottom-left-radius: 25px;
+  }
+</style>

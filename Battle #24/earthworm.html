@@ -1,0 +1,47 @@
+<body bgcolor="#E38F66">
+  <div a></div>
+  <div b></div>
+  <div c></div>
+  <div d></div>
+  <style>
+    div {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 40px;
+      height: 120px;
+      background: #fffbda;
+      border-radius: 20px;
+    }
+    [b] {
+      rotate: 90deg;
+      left: 40px;
+      top: 140px;
+    }
+    [b]:before,
+    [b]:after {
+      content: '';
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #fffbda;
+      position: absolute;
+      top: 70px;
+      left: -10px;
+      z-index: 10;
+    }
+    [b]:after {
+      left: -0px;
+      top: -0px;
+    }
+    [c] {
+      top: 180px;
+      left: 80px;
+    }
+    [d] {
+      top: 220px;
+      left: 120px;
+      rotate: 90deg;
+    }
+  </style>
+</body>

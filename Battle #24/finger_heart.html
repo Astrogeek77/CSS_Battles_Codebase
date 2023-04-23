@@ -1,0 +1,27 @@
+<div></div>
+<style>
+  body {
+    background: #4f77ff;
+  }
+  div {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 150;
+    height: 150;
+    background: #1038bf;
+  }
+  div:before,
+  div:after {
+    content: '';
+    position: absolute;
+    width: 50;
+    aspect-ratio: 1;
+    background: #1038bf;
+    inset: 100px -50px auto auto;
+    border-radius: 0 25px 25px 0;
+  }
+  div:after {
+    inset: 150px 0 auto auto;
+    border-radius: 0 0 25px 25px;
+  }
+</style>
