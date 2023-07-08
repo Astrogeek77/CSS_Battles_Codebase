@@ -1,0 +1,71 @@
+ <section>
+      <a></a>
+      <b></b>
+      <b i></b>
+      <b j></b>
+      <s></s>
+    </section>
+<style>
+      * {
+        margin: 0;
+      }
+      section {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background: #191919;
+        overflow: hidden;
+      }
+      a {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #f9e492;
+        border-radius: 50%;
+        top: 90px;
+        left: 140px;
+      }
+      b {
+        position: absolute;
+        width: 100px;
+        height: 68px;
+        background: linear-gradient(
+          #f9e492 16px,
+          #191919 16px 26px,
+          #f9e492 26px 42px,
+          #191919 42px 52px,
+          #f9e492 52px
+        );
+        top: 172px;
+        left: 100px;
+      }
+      b[i] {
+        top: 159px;
+        left: 220px;
+      }
+      b[j] {
+        width: 20px;
+        background: linear-gradient(
+          #d6b73f 16px,
+          #191919 17px 26px,
+          #d6b73f 27px 42px,
+          #191919 43px 52px,
+          #d6b73f 53px
+        );
+        top: 159px;
+        left: 200px;
+        transform: skewY(-33deg);
+        transform-origin: top right;
+      }
+      s {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: transparent;
+        border: 150px solid #4f77ff;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>

@@ -1,0 +1,31 @@
+<body bgcolor="#F3AC3C">
+  <div a></div>
+  <div b></div>
+  <div c></div>
+  <style>
+    div {
+      position: absolute;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
+    [a],
+    [b] {
+      inset: auto auto -250px 0;
+      width: 400px;
+      background: #998235;
+      z-index: 2;
+    }
+    [b] {
+      top: -250px;
+      z-index: 1;
+    }
+    [c] {
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      background: #1a4341;
+      border: 25px solid #f3ac3c;
+      z-index: 1;
+    }
+  </style>
+</body>

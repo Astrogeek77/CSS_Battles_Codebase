@@ -1,0 +1,64 @@
+ <section>
+        <a></a>
+        <p></p>
+        <p i></p>
+        <p j></p>
+        <b></b>
+        <b i></b>
+        <b j></b>
+        <b k></b>
+    </section>
+<style>
+        * {
+          margin: 0;
+        }
+        section {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: #6592CF;
+            overflow: hidden;
+        }
+        p {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #243D83;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p[i] {
+            left: -6.5%;
+        }
+        p[j] {
+            left: 106.5%;
+        }
+        a {
+            position: absolute;
+            width: 400px;
+            height: 40px;
+            background: #243D83;
+            top: 130px;
+        }
+        b {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: #6592CF;
+            border-radius: 50%;
+            top: 108px;
+            left: 71px;
+        }
+        b[i] {
+            top: 160px;
+        }
+        b[j] {
+            left: 297px;
+        }
+        b[k] {
+            top: 160px;
+            left: 297px;
+        }
+      </style>
