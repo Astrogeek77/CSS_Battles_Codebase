@@ -1,0 +1,65 @@
+<a></a><b></b><c></c
+><style>
+  * {
+    background: #e38f66;
+  }
+  a,
+  b,
+  c {
+    position: absolute;
+    background: #fffbda;
+  }
+  a {
+    width: 180;
+    height: 20;
+    top: 130;
+    left: 110;
+    border-radius: 10;
+  }
+  a::before {
+    content: '';
+    width: 120;
+    height: 90;
+    left: 30;
+    top: -90;
+    position: absolute;
+    background: #fffbda;
+    border-radius: 100px 100px 0 0;
+  }
+  b {
+    width: 20;
+    height: 20;
+    top: 172;
+    left: 160;
+    border-radius: 10px;
+  }
+  b::after {
+    content: '';
+    width: 20;
+    height: 20;
+    position: absolute;
+    top: -10;
+    left: 50;
+    border-radius: 100%;
+    border: 10px solid #fffbda;
+  }
+  c {
+    width: 40;
+    height: 40;
+    top: 220;
+    left: 155;
+    border-radius: 60px 60px 60px 0;
+    transform: rotate(45deg);
+  }
+  c::before {
+    content: '';
+    position: absolute;
+    background: #fffbda;
+    width: 40;
+    height: 40;
+    top: -35;
+    left: 35;
+    border-radius: 60px 60px 60px 0;
+    transform: rotate(180deg);
+  }
+</style>
