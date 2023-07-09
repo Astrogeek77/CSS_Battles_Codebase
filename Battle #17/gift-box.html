@@ -1,0 +1,53 @@
+<section>
+  <p></p>
+  <a></a>
+  <a i></a>
+  <b></b>
+  <b i></b>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background: #ac474b;
+  }
+  p,
+  a,
+  b {
+    position: absolute;
+  }
+  p {
+    width: 140px;
+    height: 140px;
+    background: #ffffff;
+    top: 110px;
+  }
+  a {
+    width: 140px;
+    height: 20px;
+    background: #ac474b;
+    top: 170px;
+  }
+  a[i] {
+    transform: rotate(90deg);
+  }
+  b {
+    width: 20px;
+    height: 20px;
+    background: #ac474b;
+    border: 10px solid #ffffff;
+    border-radius: 50% 50% 50% 0;
+    top: 50px;
+    left: 195px;
+  }
+  b[i] {
+    border-radius: 50% 50% 0 50%;
+    left: 165px;
+  }
+</style>

@@ -1,0 +1,94 @@
+<section>
+  <b></b>
+  <b i></b>
+  <b j></b>
+  <b k></b>
+  <p i>
+    <a>
+      <s></s>
+      <s i></s>
+    </a>
+  </p>
+  <p>
+    <a>
+      <s></s>
+      <s i></s>
+    </a>
+  </p>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #14313e;
+  }
+  p,
+  a,
+  b,
+  s {
+    position: absolute;
+  }
+  b {
+    width: 274px;
+    height: 150px;
+    background: #ffdf00;
+    border-radius: 20px;
+  }
+  b[i] {
+    width: 294px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  b[j] {
+    width: 224px;
+    height: 100px;
+    background: #14313e;
+    border-radius: 10px;
+  }
+  b[k] {
+    width: 194px;
+    height: 200px;
+    background: #14313e;
+  }
+  p {
+    width: 200px;
+    height: 200px;
+    top: 71px;
+    left: 127px;
+    overflow: hidden;
+  }
+  a {
+    width: 160px;
+    height: 30px;
+    background: #ffdf00;
+    box-shadow: 0 0 0 10px #14313e;
+    transform-origin: center left;
+    transform: rotate(45deg);
+    top: -15px;
+  }
+  s {
+    width: 20px;
+    height: 80px;
+    background: #ffdf00;
+    top: -25px;
+    left: 150px;
+  }
+  s[i] {
+    width: 60px;
+    height: 20px;
+    border-radius: 8px;
+    top: 5px;
+    left: 150px;
+  }
+  p[i] {
+    left: 73px;
+    transform: rotate(90deg);
+  }
+</style>

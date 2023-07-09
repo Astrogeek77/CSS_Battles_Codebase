@@ -1,0 +1,72 @@
+<section>
+  <p></p>
+  <p i></p>
+  <a></a>
+  <b></b>
+  <b i></b>
+  <i></i>
+  <s></s>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background: #ac474b;
+  }
+  a,
+  b,
+  i,
+  p,
+  s {
+    position: absolute;
+  }
+  p {
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 145px;
+  }
+  p[i] {
+    width: 60px;
+    height: 60px;
+    top: 95px;
+  }
+  a {
+    width: 60px;
+    height: 10px;
+    background: #ffa63f;
+    border-radius: 10px;
+    box-shadow: 5px 0 0 4px #ac474b, -5px 0 0 4px #ac474b;
+    top: 143px;
+  }
+  b {
+    width: 10px;
+    height: 10px;
+    background: #0e1f2b;
+    border-radius: 50%;
+    top: 113px;
+    left: 205px;
+  }
+  b[i] {
+    left: 185px;
+  }
+  i {
+    width: 40px;
+    height: 45px;
+    background: linear-gradient(#0e1f2b 15px, #ffffff 15px 25px, #0e1f2b 25px);
+    top: 55px;
+  }
+  s {
+    width: 60px;
+    height: 5px;
+    background: #0e1f2b;
+    top: 95px;
+  }
+</style>
