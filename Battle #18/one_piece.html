@@ -1,0 +1,121 @@
+<section>
+  <a></a>
+  <b></b>
+  <b i></b>
+  <i></i>
+  <i></i>
+  <i i></i>
+  <i j></i>
+  <s
+    ><p></p>
+    <p i></p>
+    <u></u
+  ></s>
+  <s i
+    ><p></p>
+    <p i></p>
+    <u></u
+  ></s>
+  <s j
+    ><p></p>
+    <p i></p>
+    <u></u
+  ></s>
+  <s k
+    ><p></p>
+    <p i></p>
+    <u></u
+  ></s>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #000000;
+  }
+  a,
+  b,
+  i,
+  p,
+  s,
+  u {
+    position: absolute;
+  }
+  a {
+    width: 150px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 50px;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  b {
+    width: 40px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    top: 135px;
+    left: 150px;
+    transform: rotate(60deg);
+  }
+  b[i] {
+    left: 210px;
+    transform: rotate(120deg);
+  }
+  i {
+    width: 15px;
+    height: 20px;
+    background: white;
+    top: 220px;
+    left: 173px;
+  }
+  i[i] {
+    left: 193px;
+  }
+  i[j] {
+    left: 213px;
+  }
+  s {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    top: 90px;
+    left: 93px;
+  }
+  s[i] {
+    transform: rotate(135deg);
+    top: 83px;
+    left: 250px;
+  }
+  s[j] {
+    transform: rotate(225deg);
+    top: 180px;
+    left: 257px;
+  }
+  s[k] {
+    transform: rotate(315deg);
+    top: 187px;
+    left: 100px;
+  }
+  p {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+  }
+  p[i] {
+    top: 15px;
+  }
+  u {
+    width: 25px;
+    height: 20px;
+    background: white;
+    top: 10px;
+    left: 13px;
+  }
+</style>

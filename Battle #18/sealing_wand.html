@@ -1,0 +1,82 @@
+  <style>
+      * {
+        margin: 0;
+      }
+      section {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background: #161616;
+      }
+      a,
+      b,
+      i {
+        position: absolute;
+      }
+      a {
+        width: 80px;
+        height: 40px;
+        background: #e96a23;
+        border-radius: 0 80px 10px 0;
+        top: 129px;
+        left: 200px;
+      }
+      b {
+        width: 20px;
+        height: 100px;
+        background: #e96a23;
+        top: 200px;
+        left: 190px;
+      }
+      b[i] {
+        width: 30px;
+        height: 40px;
+        background: #a22015;
+        border-radius: 10px;
+        top: 163px;
+        left: 185px;
+      }
+      b[j] {
+        width: 62px;
+        height: 62px;
+        background: radial-gradient(
+          circle,
+          #161616 10px,
+          #a22015 11px 15px,
+          white 16px 25px,
+          #a22015 26px 30px,
+          transparent 31px
+        );
+        top: 119px;
+        left: 169px;
+      }
+      i {
+        width: 55px;
+        height: 12px;
+        background: white;
+        border-radius: 0 0 0 30px;
+        top: 132px;
+        left: 130px;
+      }
+      i[i] {
+        width: 35px;
+        top: 144px;
+        left: 145px;
+      }
+      i[j] {
+        width: 25px;
+        top: 156px;
+        left: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <a></a>
+      <b></b>
+      <b i></b>
+      <b j></b>
+      <i></i>
+      <i i></i>
+      <i j></i>
+    </section>

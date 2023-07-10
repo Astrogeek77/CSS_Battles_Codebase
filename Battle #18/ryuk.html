@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryuk</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      section {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background: #bac7ce;
+      }
+      a,
+      b,
+      i {
+        position: absolute;
+      }
+      a {
+        width: 120px;
+        height: 120px;
+        background: black;
+        border-radius: 0 50%;
+        top: 130px;
+        left: 30px;
+        transform: rotate(-15deg);
+      }
+      b {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(
+          circle,
+          #4e2b24 15px,
+          #000000 16px 20px,
+          #868a64 21px
+        );
+        box-shadow: 15px 0 #5a6042 inset;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(105deg);
+      }
+      a[i] {
+        left: 250px;
+        transform: rotate(105deg);
+      }
+      b[i] {
+        transform: translate(-50%, -50%) rotate(-15deg);
+      }
+      i {
+        width: 130px;
+        height: 130px;
+        background: #475862;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <a><b></b></a>
+      <a i><b i></b></a>
+      <i></i>
+    </section>
+  </body>
+</html>

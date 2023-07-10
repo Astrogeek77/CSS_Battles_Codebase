@@ -1,0 +1,57 @@
+<section>
+  <b></b>
+  <a><p></p></a>
+  <a i><p></p></a>
+  <a j><p></p></a>
+  <i></i>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a,
+  b,
+  i,
+  p {
+    position: absolute;
+  }
+  b {
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      #000000 24px,
+      #e96a23 25px 34px,
+      #000000 35px 49px,
+      #a22015 50px 94px,
+      #000000 95px
+    );
+  }
+  a[i] {
+    transform: rotate(120deg);
+  }
+  a[j] {
+    transform: rotate(-120deg);
+  }
+  p {
+    width: 70px;
+    height: 70px;
+    border: 15px solid black;
+    border-radius: 50%;
+    top: 35px;
+    left: -50px;
+  }
+  i {
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(circle, transparent 100px, #161616 101px);
+  }
+</style>
