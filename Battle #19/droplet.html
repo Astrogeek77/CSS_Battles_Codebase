@@ -1,0 +1,42 @@
+<section>
+  <a></a>
+  <a i></a>
+  <b></b>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to left, #c36271 50%, #f2e09f 0);
+  }
+  a,
+  b {
+    position: absolute;
+  }
+  a {
+    width: 180px;
+    height: 150px;
+    background: #f2e09f;
+    border-radius: 0 0 100px;
+    left: 200px;
+  }
+  a[i] {
+    background: #c36271;
+    border-radius: 100px 0 0;
+    top: 150px;
+    left: 20px;
+  }
+  b {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#c36271 50%, #f2e09f 0);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>

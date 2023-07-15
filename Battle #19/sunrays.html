@@ -1,0 +1,55 @@
+<section>
+  <a><b></b></a>
+  <a i><b></b></a>
+  <a j><b></b></a>
+  <a k><b></b></a>
+  <a l><b></b></a>
+  <a m><b></b></a>
+  <a n><b></b></a>
+</section>
+<style>
+  * {
+    margin: 0;
+  }
+  section {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #d25b70;
+  }
+  a,
+  b {
+    position: absolute;
+  }
+  a {
+    height: 10px;
+    left: 50%;
+    top: 195px;
+    transform-origin: left center;
+  }
+  b {
+    width: 100px;
+    height: 10px;
+    background: #f2e09f;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  a[i] {
+    transform: rotate(-30deg);
+  }
+  a[j] {
+    transform: rotate(-60deg);
+  }
+  a[k] {
+    transform: rotate(-90deg);
+  }
+  a[l] {
+    transform: rotate(-120deg);
+  }
+  a[m] {
+    transform: rotate(-150deg);
+  }
+  a[n] {
+    transform: rotate(-180deg);
+  }
+</style>
